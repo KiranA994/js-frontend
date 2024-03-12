@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/icon" href="https://rukminim2.flixcart.com/image/850/1000/jy90eq80/wall-clock/m/g/w/wall-clock-w0020pa01-analog-titan-original-imafggpkz262ebf8.jpeg?q=20&crop=false">
+    <title>Clock</title>
+</head>
+<body>
+    <div>  
+        <h1 id="clock"></h1>
+    </div>
+</body>
+<script>
+    function getTime(){
+        const time = new Date();
+        let hour = time.getHours();
+        let second = time.getSeconds();
+        let min = time.getMinutes();
+        let millisec = time.getMilliseconds();
+        clock.innerHTML = `${hour}: ${min}: ${second} ${hour>=12 ? 'PM': 'AM'}`
+        
+        setTimeout(()=>{
+            getTime();
+        },1000)
+    }
+
+    getTime();
+</script>
+</html>

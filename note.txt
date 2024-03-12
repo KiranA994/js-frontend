@@ -1,0 +1,92 @@
+javascript frontend
+-------------------
+
+It gives behaviour
+
+Browser
+-------
+
+It is an application program that provides an interface to interact 
+with all information available in www(world wide web).
+
+Browser Engine
+--------------
+
+can read and display html, css and javascript.
+
+javascript cannot directly access the html and css.
+
+But javascript can access DOM - Document Object Model.
+
+DOM
+---
+
+Tree structure of html document.
+
+created by browser.
+
+BOM
+---
+Browser Object Model
+
+
+way to apply javascript with html
+---------------------------------
+
+1) internal javascript
+   
+   place the script tag after body tag close.
+
+   <script>
+   javascript content
+   </script>
+
+2) external javascript
+
+   create an external javascript file as .js extension.
+
+   link the js file with html using 
+
+   <script src=".js file"></script>
+
+how to access the html tag
+--------------------------
+
+1) document.getElementById("id")
+
+   returns the particular tag.
+
+2) document.getElementByTagname("tagname")
+
+   returns html collection (array) of that particular tag.
+
+3) document.getElementByClassName("className")
+
+   returns html collection (array) of that particular tag with same class name.
+
+4) document.querySelector("tagname/#id/.classname")
+
+   returns the first tag that satisfy the condition
+
+5) document.querySelectorAll("tagname/#id/.classname")
+
+   returns node list
+
+how to access the content
+-------------------------
+
+1) .innerHTML
+document.write()
+textcontent()
+
+Events
+------
+
+events are those actions which have the ability to update DOM.
+
+eg:- 
+1)click
+2)change
+3)keydown
+4)submit
+5)load      

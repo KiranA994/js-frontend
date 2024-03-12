@@ -1,0 +1,10 @@
+::placeholder{
+    float: right;
+}
+input{
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    color: red;
+}

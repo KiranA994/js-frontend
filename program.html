@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="c">javascript</h1>
+    <h1 id="dom">DOM</h1>
+    <p class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi repellat laborum sunt odit, eligendi nihil. Distinctio mollitia illo impedit ad labore cumque ab! Corrupti praesentium sed iure odit illo.</p>
+    <button onclick="change()">Click</button>
+</body>
+<script>
+    function change(){
+        let content = document.getElementById("dom");
+        content.innerHTML = "Document Object Model";
+        content.style.color = 'red';
+
+        // let content = document.getElementsByTagName("h1");
+        // content[1].innerHTML = "Document Object Model";
+        // content[1].style.color = 'red';
+        
+        // using id name -> dom
+        dom.innerHTML = "Document Object Model";
+        dom.style.color = 'red';
+
+        // let content = document.getElementsByClassName("c");
+        // content[1].innerHTML = "Document Object Model";
+        // content[1].style.color = 'red';
+
+        // let content = document.querySelectorAll(".c");
+        // content[1].innerHTML = "Document Object Model";
+        // content[1].style.color = 'red';
+    }
+</script>
+</html>
