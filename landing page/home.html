@@ -21,8 +21,12 @@
             </span>
         </a>      
         <div>
-            <i class="fa-solid fa-circle-user fa-2x text-light"></i>
-            <span class="text-light fs-3">Logout</span>
+            <button onclick="logout()" class="btn">
+                <i class="fa-solid fa-circle-user fa-2x text-light"></i>
+                <span class="text-light fs-3"
+                >Logout</span>
+            </button>
+
         </div>
             </div>
           </nav>
@@ -31,7 +35,7 @@
         
         <h1 class="text-center">
           <b>
-            Welcome <span class="text-danger">User</span>
+            Welcome <span class="text-danger" id="result">user</span>
           </b> 
         </h1>
     
@@ -42,4 +46,18 @@
             </p>
     </div>
 </body>
+<script>
+let user = localStorage.getItem('user');
+
+if(!user){
+    window.location = 'index.html'; 
+}
+else{
+    result.innerHTML = user;
+}
+
+function logout(){
+    localStorage.removeItem('user');    
+}
+</script>
 </html>

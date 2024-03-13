@@ -90,3 +90,33 @@ eg:-
 3)keydown
 4)submit
 5)load      
+
+
+database
+--------
+
+used to store data
+
+data sholud be stored as key calue pair
+
+key must be string
+
+browser - storage
+-----------------
+
+1) local storage - permanent storage,we need to manually remove the data.
+                 - limited amount of data can be stored.
+
+2) session storage - limited amount of data, but not permanent storage.
+                   - data will be lost when the session is closed.
+                   - limited amount of data can be stored.
+
+operations in local storage
+--------------------------
+
+1) Add - setItem('key',value)
+2) Get - getItem('key')
+3) remove - removeItem('key')
+
+JSON.stringify() - convert object to string.
+JSON.parse() - convert string to object.
